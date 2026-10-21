@@ -11,11 +11,11 @@ The goal of the project assignment is to learn to **analyse the impact of electr
 The repository includes:
 - Files for installing the PyPSA-ecosystem environment via `pixi`
 - A dummy file called `smoke_test_installation.ipynb` which you can run to test if your installation is functioning as expected (see 1.2)
-- An illustrative `my_model` directory, which includes:
+- An illustrative `my_electricity_market_model` directory, which includes:
     - Pre-generated example input data for your national electricity system model
     - A tutorial on how to set-up such a model in PyPSA based on a reference historical year, then run it and analyse it (`tutorial_1_create_national_model.ipynb`)
     - A tutorial on how to introduce relevant policy(-driven) changes into the model (`tutorial_2_enrich_national_model.ipynb`)
-    - A tutorial on how to self-generate model input data for a different country via the PyPSA ecosystem and other open-source resources (`tutorial_0_get_input_data.ipynb`)
+    - An (optional) tutorial on how to automatise generating model input data for a different country via the PyPSA ecosystem and other open-source resources (`tutorial_0_get_input_data.ipynb`)
 
 ## 1. Installation and quickstart
 
