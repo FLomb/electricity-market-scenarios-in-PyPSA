@@ -6,6 +6,8 @@ The goal of the project assignment is to learn to **analyse the impact of electr
 - Develop an hourly dispatch optimisation model for a national electricity system of your choice with PyPSA.
 - Use it to assess the impact of plausible policy(-driven) scenarios (e.g., introduction of a carbon tax, growth in the share of renewables).
 
+![Tutorial sample](/my_electricity_market_model/output_data/tutorial_sample.gif)
+
 ## The repository in a nutshell
 
 The repository includes:
@@ -42,7 +44,7 @@ As mentioned eabove, there are three tutorials.
 
 The key tutorial to understand how to set up a model and run it is **tutorial #1**, where we build a model of the electricity system of the Netherlands. We do so from scratch, but based on pre-generated `input_data` (regarding electricity demand, weather-dependent renewables capacity factors, and techno-economic technology parameters) for the same country contained in this repository. To model a different country, you could simply gather similar input data from any source for your country of interest, and re-run the same tutorial based on such data.
 
-![Example dispatch](/my_model/output_data/energy-balance.png)
+![Example dispatch](/my_electricity_market_model/output_data/energy-balance.png)
 
 The tutorial also offers examples of how to extract meaningful metrics from the model, such as electricity prices, the energy balance, and the cost recovery of generators.
 
@@ -50,7 +52,7 @@ The tutorial also offers examples of how to extract meaningful metrics from the 
 
 In **tutorial #2**, we re-load the same model we created (and exported for later use) in tutorial #1. Then, we introduce relevant changes to it, such as: 1) introducing a carbon tax; or 2) simulating the growth of renewables and battery storage. For each case, we assess what its impact is on the same metrics we looked at in the reference case, such as prices, energy balance and cost recovery.
 
-![Example cost recovery across scenarios](/my_model/output_data/cost-recovery-in-years-by-power-plant-ty.png)
+![Example cost recovery across scenarios](/my_electricity_market_model/output_data/cost-recovery-in-years-by-power-plant-ty.png)
 
 ### 2.3 How to automatise the generation of input data
 
