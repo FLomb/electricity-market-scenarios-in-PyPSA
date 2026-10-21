@@ -1,6 +1,6 @@
 # Assessing electricity market scenarios with the PyPSA ecosystem
 
-This repository contains learning material for the model-based project assignment of the TU Delft course [SEN1522 - Electricity and Gas: Market Design and Policy Issues](). The material on this repository is largely based on the open-source energy system modelling framework [PyPSA][https://github.com/PyPSA/PyPSA] and on other tools within the [PyPSA ecosystem](https://pypsa.org/#frameworks).
+This repository contains learning material for the model-based project assignment of the TU Delft course [SEN1522 - Electricity and Gas: Market Design and Policy Issues](). The material on this repository is largely based on the open-source energy system modelling framework [PyPSA](https://github.com/PyPSA/PyPSA) and on other tools within the [PyPSA ecosystem](https://pypsa.org/#frameworks).
 
 The goal of the project assignment is to learn to **analyse the impact of electricity system changes on hourly prices, emissions, and other relevant metrics**. To do so, as a course participant, you are expected to:
 - Develop an hourly dispatch optimisation model for a national electricity system of your choice with PyPSA.
@@ -55,7 +55,7 @@ If you want to take further advantage of the possibilities offered by the PyPSA 
 
 ## Contributors and license
 
-Unless otherwise indicated, the educational materials in this repository, including tutorial text and explanations, are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Contributors to the content developed exclusively for this repository are listed in the [Contributors]() page.
+Unless otherwise indicated, the educational materials in this repository, including tutorial text and explanations, are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Contributors to the content developed exclusively for this repository are listed on the [Contributors](https://github.com/FLomb/electricity-market-scenarios-in-PyPSA/graphs/contributors?from=18%2F07%2F2026) page.
 
 Third-party software, code, figures, datasets, and other materials retain their respective licenses and copyright notices. In particular:
 - The PyPSA code is released as free software under an [MIT license](https://github.com/PyPSA/PyPSA/blob/master/LICENSES/MIT.txt), and it's the copyright of [PyPSA contributors](https://docs.pypsa.org/latest/contributing/contributors/).
