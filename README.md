@@ -55,7 +55,7 @@ If you want to take further advantage of the possibilities offered by the PyPSA 
 
 ## Contributors and license
 
-Unless otherwise indicated, the educational materials in this repository, including tutorial text and explanations, are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Contributors to the content developed exclusively for this repository are listed on the [Contributors](https://github.com/FLomb/electricity-market-scenarios-in-PyPSA/graphs/contributors?from=18%2F07%2F2026) page.
+Unless otherwise indicated, the educational materials in this repository, including tutorial text and explanations, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](/LICENSE.md). Contributors to the content developed exclusively for this repository are listed on the [Contributors](https://github.com/FLomb/electricity-market-scenarios-in-PyPSA/graphs/contributors?from=18%2F07%2F2026) page.
 
 Third-party software, code, figures, datasets, and other materials retain their respective licenses and copyright notices. In particular:
 - The PyPSA code is released as free software under an [MIT license](https://github.com/PyPSA/PyPSA/blob/master/LICENSES/MIT.txt), and it's the copyright of [PyPSA contributors](https://docs.pypsa.org/latest/contributing/contributors/).
