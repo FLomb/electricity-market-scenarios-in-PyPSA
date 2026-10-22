@@ -12,6 +12,7 @@ The goal of the project assignment is to learn to **analyse the impact of electr
 
 The repository includes:
 - Files for installing the PyPSA-ecosystem environment via `pixi`
+- A [FAQ](/FAQ.md) file with frequently asked questions on data and modelling choices
 - A dummy file called `smoke_test_installation.ipynb` which you can run to test if your installation is functioning as expected (see 1.2)
 - An illustrative `my_electricity_market_model` directory, which includes:
     - Pre-generated example input data for your national electricity system model
