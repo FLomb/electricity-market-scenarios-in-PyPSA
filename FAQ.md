@@ -47,3 +47,75 @@ The model and the real-world data will never be exactly the same, but may be mor
 
 Keep in mind also that prices are not the only means of validation; even before prices, you should assess to what extent the yearly generation from different power plants and the dispatch dynamics approximate real-world ones. If the dispatch and/or yearly generation have a substantial deviation from real-world data, prices will, too.
 
+## 3. How do I represent [something] in a PyPSA dispatch model?
+
+For most code-related questions, you can find answers from [PyPSA's extensive documentation and gallery of examples](https://docs.pypsa.org/latest/). To make things even easier and quicker, you can also take advantage of **PyPSA Guru**. That is the AI model accessible from PyPSA's documentation (just click on 'Ask AI' from any page) and trained specifically on its contents. PyPSA Guru will provide more reliable results than generic AI models, avoiding possible mixing of old and new PyPSA examples.
+
+See the example below:
+
+**[You]**: *How can I represent long-duration power-to-hydrogen-to-power storage in an electricity dispatch model?*
+
+**[PyPSA Guru]**:
+
+Use a **hydrogen bus + electrolyser `Link` + hydrogen `Store` + turbine/fuel-cell `Link`**.
+
+This is the pattern shown in the PyPSA examples for hydrogen storage systems.
+
+1. Add a hydrogen `Bus`.
+2. Add a charging `Link` from electricity to hydrogen, the electrolyser.
+3. Add a `Store` on the hydrogen bus for long-duration energy storage.
+4. Add a discharging `Link` from hydrogen back to electricity, such as a turbine or fuel cell.
+
+Minimal pattern from the examples:
+
+```python
+n.add("Bus", "hydrogen", carrier="hydrogen")
+```
+
+
+```python
+n.add(
+    "Link",
+    "electrolysis",
+    bus0="electricity",
+    bus1="hydrogen",
+    carrier="electrolysis",
+    p_nom_extendable=True,
+    efficiency=costs.at["electrolysis", "efficiency"],
+    capital_cost=costs.at["electrolysis", "capital_cost"],
+)
+```
+
+
+```python
+n.add(
+    "Store",
+    "hydrogen storage",
+    bus="hydrogen",
+    carrier="hydrogen storage",
+    capital_cost=costs.at["hydrogen storage underground", "capital_cost"],
+    e_nom_extendable=True,
+    e_cyclic=True,
+)
+```
+
+
+```python
+n.add(
+    "Link",
+    "turbine",
+    bus0="hydrogen",
+    bus1="electricity",
+    carrier="turbine",
+    p_nom_extendable=True,
+    efficiency=costs.at["OCGT", "efficiency"],
+    capital_cost=costs.at["OCGT", "capital_cost"] / costs.at["OCGT", "efficiency"],
+)
+```
+
+Why this is suitable for **long-duration** storage:
+- `Store` provides inter-temporal storage on a single bus.
+- `Store` energy capacity can be optimized independently with `e_nom_extendable=True`.
+- charging and discharging power are controlled separately by the `Link` components, which is exactly the decoupled setup PyPSA recommends when power and energy capacities should be independent.
+
+If you want a simpler but less flexible formulation with fixed power-to-energy ratio, PyPSA recommends `StorageUnit` instead, but the hydrogen examples use `Store` + `Link`, not `StorageUnit`.
