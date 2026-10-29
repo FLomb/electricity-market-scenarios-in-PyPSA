@@ -1,6 +1,6 @@
 # Assessing electricity market scenarios with the PyPSA ecosystem
 
-This repository contains learning material for the model-based project assignment of the TU Delft course [SEN1522 - Electricity and Gas: Market Design and Policy Issues](). The material on this repository is largely based on the open-source energy system modelling framework [PyPSA](https://github.com/PyPSA/PyPSA) and on other tools within the [PyPSA ecosystem](https://pypsa.org/#frameworks).
+This repository contains learning material for the model-based project assignment of the TU Delft course [SEN1522 - Electricity and Gas: Market Design and Policy Issues](https://www.studyguide.tudelft.nl/opleidingen/study-guide/educations/26564#/details/26952). The material on this repository is largely based on the open-source energy system modelling framework [PyPSA](https://github.com/PyPSA/PyPSA) and on other tools within the [PyPSA ecosystem](https://pypsa.org/#frameworks).
 
 The goal of the project assignment is to learn to **analyse the impact of electricity system changes on hourly prices, emissions, and other relevant metrics**. To do so, as a course participant, you are expected to:
 - Develop an hourly dispatch optimisation model for a national electricity system of your choice with PyPSA.
