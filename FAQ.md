@@ -6,7 +6,7 @@
 
 ### Where can I find power plant capacity data?
 
-As explained in the guidelines for the modelling assignment, detailed data on the current capacity of power plants of different kinds is available from powerplantmatching (see **tutorial 0**). Another option is to download power plant capacity data from [Open Power System Data](https://data.open-power-system-data.org/national_generation_capacity/2020-10-01), but it's less up to date.
+As explained in the guidelines for the modelling assignment, detailed data on the current capacity of power plants of different kinds is available from powerplantmatching (see **tutorial #0**). Another option is to download power plant capacity data from [Open Power System Data](https://data.open-power-system-data.org/national_generation_capacity/2020-10-01), but it's less up to date.
 
 Keep in mind that neither source is always precise. For most countries, there are small inconsistencies due to how data are reported by national bodies in charge of energy statistics. For instance, most countries do not report data about rooftop photovoltaic (PV) plants, leading to a severely underestimated existing solar PV capacity. We advise you to always integrate the results with some country-specific source (e.g., the website of or an annual report by a national energy regulator or statistics body) and adjust as needed.
 
@@ -14,7 +14,7 @@ In the Netherlands, the information is available from CBS: for example, [this pa
 
 ### Where can I find power plant techno-economic parameters?
 
-For the techno-economic parameters (efficiency, costs, etc.), we don't expect you to find country-specific data. It is perfectly fine to use the data from the PyPSA's Technology Data (see **tutorial 0**), which mostly relies on the data from the [Danish Energy Agency technology catalogues](https://ens.dk/en/analyses-and-statistics/technology-catalogues), a European reference widely used by all countries for modelling studies.
+For the techno-economic parameters (efficiency, costs, etc.), we don't expect you to find country-specific data. It is perfectly fine to use the data from the PyPSA's Technology Data (see **tutorial #0**), which mostly relies on the data from the [Danish Energy Agency technology catalogues](https://ens.dk/en/analyses-and-statistics/technology-catalogues), a European reference widely used by all countries for modelling studies.
 
 ### Where can I find hourly electricity demand profiles?
 
