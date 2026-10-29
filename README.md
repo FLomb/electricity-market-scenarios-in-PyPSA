@@ -57,7 +57,7 @@ In **tutorial #2**, we re-load the same model we created (and exported for later
 
 ### 2.3 How to automatise the generation of input data
 
-If you want to take further advantage of the possibilities offered by the PyPSA ecosystem, with tools such as **powerplantmatching** and **technology-data**, you can have a look at **tutorial 0**. There, we show how to automatise the search for existing power plants in a given (European) country, filtering by the desired year of decommissioning. And we show how to automatically download techno-economic parameters for all sorts of power plant and technology types. 
+If you want to take further advantage of the possibilities offered by the PyPSA ecosystem, with tools such as **powerplantmatching** and **technology-data**, you can have a look at **tutorial #0**. There, we show how to automatise the search for existing power plants in a given (European) country, filtering by the desired year of decommissioning. And we show how to automatically download techno-economic parameters for all sorts of power plant and technology types. 
 
 
 ## Contributors and license
