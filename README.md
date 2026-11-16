@@ -32,7 +32,7 @@ The exact path might change depending on how your computer is structured. Use th
 `cd C:\Users\yourusername\Documents\SEN1522`.
 
 ### 1.2 Using pixi to install and use the environment
-Now, from the terminal, just run `pixi install`, and the environment will be installed. You can now type `pixi run jupyter lab`, which will open an interactive Jupyter Notebook and will give you the chance to open and play with the tutorials, as well as to create your own additional notebooks to perform new analyses.
+Now, from the terminal, just run `pixi install --locked`, and the environment will be installed. You can now type `pixi run jupyter lab`, which will open an interactive Jupyter Notebook and will give you the chance to open and play with the tutorials, as well as to create your own additional notebooks to perform new analyses.
 
 You can also quickly verify that the installation works as expected by running, after opening Jupyter Lab as above, the notebook `smoke_test_installation.ipynb`. This is a dummy notebook with simple commands that should just work if the installation is successful.
 
