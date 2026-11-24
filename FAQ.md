@@ -41,6 +41,10 @@ The assessment criteria are those reported in the modelling assignment full desc
 
 If you are implementing a more realistic power-plant mix (e.g., by disaggregating into more categories, or by distinguishing power plants by their 'age' and penalising older ones), your research questions and scenarios should allow you to come up with a quite interesting analysis, because you will have multiple power plants affected by, e.g., the CO2 tax in different ways, compared to the example. 
 
+### Should I consider imports and exports from neighbouring countries?
+
+Detailed representation of cross-border exchanges may be not worth pursuing for the project, especially for a country with limited import and export flows. However, a simplified representation of imports (as a `generator`) and exports (as a `generator` with negative `sign` and negative `marginal_cost`) may be helpful in avoiding that the model doesn't have enough capacity to meet the demand and uses load-shedding as a fallback, which would largley bias prices and cost-recovery considerations.
+
 ### How well should my model approximate real-world data to be considered 'validated'?
      
 The model and the real-world data will never be exactly the same, but may be more or less close depending on how finely you have approximated the different power plants of the country under study. E.g., if you have only one CCGT technology to represent a variety of fossil generators, price dynamics will hardly be the same. What matters, however, is that the difference you see reflects the simplifications you made, and you can thus explain it. And, moreover, that the high-level dynamics (e.g., the order of magnitude of the price, the peak/valley times of the day) are plausible. To make up for the difficulty of comparing a single day for a model with several approximations, a good solution may be to complement that with a more aggregate validation of the prices, such as looking at average daily/weekly/monthly prices over the entire year of operation. 
